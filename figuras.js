@@ -4,12 +4,12 @@ console.group("Cuadrados");
 // console.log("Los lados del cuadrado miden: " + ladoCuadrado + "cm");
 
 function perimetroCuadrado(lado) {
-  return `El perímetro del cuadrado es de: ${lado*4}`;
+  return `La suma de los lados es: ${lado*4}`;
 }
 // console.log("El perímetro del cuadrado es: " + perimetroCuadrado + "cm");
 
 function areaCuadrado(lado) {
-  return `El área del cuadrado es de: ${lado*lado}`
+  return `El área del cuadrado es: ${lado*lado}`;
 }
 // console.log("El área del cuadrado es: " + areaCuadrado + "cmˆ2");
 console.groupEnd();
@@ -75,6 +75,13 @@ function areaCirculo(radio) {
 console.groupEnd();
 
 
+const alturaTrianguloIsosceles = (a, b) =>{
+    let altura = Math.sqrt((a*a) - ((b*b)/4));
+    return altura.toFixed(4);
+}
+
+console.log(`La altura del triangulo es de ${alturaTrianguloIsosceles(6,10)}`);
+
 // Aquí interactuamos con el HTML
 function calcularPerimetroCuadrado() {
   const input = document.getElementById("InputCuadrado");
@@ -89,4 +96,17 @@ function calcularAreaCuadrado() {
 
   const area = areaCuadrado(value);
   alert(area);
+}
+
+
+function calcularAlturaTri(){
+    const input = document.getElementById("LadosIguales");
+    const input2 = document.getElementById("LadoDiferente");
+
+    const value = input.value;
+    const value2 = input2.value;
+  
+
+    const altura = alturaTrianguloIsosceles(value, value2);
+    return alert(altura);
 }
