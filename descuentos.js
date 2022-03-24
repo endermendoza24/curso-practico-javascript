@@ -33,6 +33,9 @@ const onClickButtonPriceDiscount =() =>{
 }
 
 
+// determinet currently day with github copilot
+ 
+
 
 // console.log({
 //     precioOriginal,

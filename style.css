@@ -1,15 +1,16 @@
 :root{
-    --main-color: #5CF1DF;
+    --main-color: #e5e5e5;
     --success: #4DA171;
     --black:#000000;
-    --secondary:#FFAE57;
+    --white:#fff;
+    --secondary:#ffb88f;
     --lg:20px;
     --md:18px;
     --sm:16px;
 }
 
 html{
-background-color: var(--black);
+
 }
 
 .container{
@@ -31,14 +32,15 @@ background-color: var(--black);
     margin: 10px auto;
     border: 0;
     border-radius: 10px;
-    background-color:var(--secondary) ;
+    background-color:var(--white) ;
     z-index: 10;
 }
 .formu label{
     text-align: center;
     padding: 10px;
 }
- button{
+
+button{
     display: block;
     width: 90%;
     height: 30px;
@@ -53,4 +55,22 @@ background-color: var(--black);
 }
 .cuadrado{
     margin: 0 auto;
+}
+
+.cupones{
+    display: flex;
+    width: 100%;
+    height: 240px;
+    
+}
+.cupones .cards{
+    width: 90%;
+    height: 230px;
+    box-shadow: 5px 5px 5px rgba(.75,.75,.75,.16);
+    margin:auto 20px;
+    background-color: var(--white);
+    border-radius: 10px;
+    font-size: var(--md);
+    font-weight: bold;
+    text-align: center;
 }

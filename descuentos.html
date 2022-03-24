@@ -14,7 +14,7 @@
     <p>Segundo taller del curso</p>
 
     <section class="container">
-        <h2>Calcula el precio a pagar de tu sproductos</h2>
+        <h2>Calcula el precio a pagar de tus productos</h2>
 
         <form class="formu" action="">
             <label for="inputPrice">Escribe el precio de tu producto</label>
@@ -22,6 +22,25 @@
 
             <label for="inputDiscount">Escribe el descuento de tu producto</label>
             <input type="number" name="" min="0" id="inputDiscount">
+
+            <div class="cupones">
+                
+
+                <div class="cards">
+                    <label for="discountOne">50% descuento</label>
+                    <input type="radio" name="discountOne" id="discoutOne" value="50" >
+                </div>
+
+                <div class="cards">
+                    <label for="discountTwo">25% descuento</label>
+                <input type="radio" name="discountTwo" id="discountTwo" value="25">
+                </div>
+
+                <div class="cards">
+                    <label for="discountThree">10% descuento</label>
+                <input type="radio" name="discountThree" value="10" id="discountThree">
+                </div>
+            </div>
 
             <button type="button" onclick="onClickButtonPriceDiscount()">Calcular</button>
 
